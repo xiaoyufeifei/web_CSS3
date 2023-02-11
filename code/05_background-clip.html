@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>background-clip</title>
+    <style>
+        div {
+            width: 100px;
+            height: 100px;
+            padding: 20px;
+            border: 5px dashed;
+            float: left;
+            margin: 5px;
+            background: #ff0000;
+        }
+    </style>
+</head>
+<body>
+    <div></div>
+    <div style="background-clip: border-box;">正文</div>
+    <div style="background-clip: padding-box;">正文</div>
+    <div style="background-clip: content-box;">正文</div>
+</body>
+</html>

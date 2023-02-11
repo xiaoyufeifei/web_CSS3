@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>属性选择器</title>
+    <style>
+        td[lang] {
+            color:#ff0000;
+        }
+        td[title="a"] {
+            color:#ff0000;
+        }
+        td[title~="c"] {
+            color: #ff0000;
+        }
+        td[title|="h"] {
+            color: #ff0000;
+        }
+        td[title^="l"] {
+            color: #ff0000;
+        }
+        td[title$="o"] {
+            color: #ff0000;
+        }
+        td[title*="x"] {
+            color: #ff0000;
+        }
+    </style>
+</head>
+<body>
+    <h1>有lang属性的td元素会被选择</h1>
+    <table border="1">
+        <tr>
+            <td>有td元素无属性</td>
+            <td lang="">有td元素有lang属性但属性值为空</td>
+            <td lang="en">有td元素有lang属性属性值为en</td>
+            <td lang="cn">有td元素有lang属性属性值为en</td>
+        </tr>
+    </table>
+    <br />
+    <h1>有title属性属性值为a的td元素会被选择</h1>
+    <table border="1">
+        <tr>
+            <td>有td元素无属性</td>
+            <td title="">有td元素有title属性但属性值为空</td>
+            <td title="a">有td元素有title属性属性值为a</td>
+            <td title="a b">有td元素有title属性属性值为a b</td>
+            <td title="ab">有td元素有title属性属性值为ab</td>
+            <td title="ba">有td元素有title属性属性值为ba</td>
+        </tr>
+    </table>
+    <br />
+    <h1>有title属性属性值包含“c,且c前后只能有空格”的td元素会被选择</h1>
+    <table border="1">
+        <tr>
+            <td>有td元素无属性</td>
+            <td title="">有td元素有title属性但属性值为空</td>
+            <td title="c">有td元素有title属性属性值为c</td>
+            <td title="c d">有td元素有title属性属性值为c d</td>
+            <td title="c-d">有td元素有title属性属性值为c-d</td>
+            <td title="cd">有td元素有title属性属性值为cd</td>
+            <td title="d c">有td元素有title属性属性值为dc</td>
+            <td title="dc">有td元素有title属性属性值为dc</td>
+        </tr>
+    </table>
+    <br />
+    <h1>有title属性属性值为“h开头，且h只能为独立单词，后面可跟连字符”的会被选择</h1>
+    <table border="1">
+        <tr>
+            <td>有td元素无属性</td>
+            <td title="">有td元素有title属性但属性值为空</td>
+            <td title="h">有td元素有title属性属性值为h</td>
+            <td title="h i">有td元素有title属性属性值为h i</td>
+            <td title="h-i">有td元素有title属性属性值为h-i</td>
+            <td title="hi">有td元素有title属性属性值为hi</td>
+            <td title="i h">有td元素有title属性属性值为i h</td>
+            <td title="i h j">有td元素有title属性属性值为i h j</td>
+        </tr>
+    </table>
+    <br />
+    <br />
+    <h1>有title属性属性值为"1开头"的td元素会被选择</h1>
+    <table border="1">
+        <tr>
+            <td>有td元素无属性</td>
+            <td title="">有td元素有title属性但属性值为空</td>
+            <td title="l">有td元素有title属性属性值为l</td>
+            <td title="l m">有td元素有title属性属性值为l m</td>
+            <td title="l-m">有td元素有title属性属性值为l-m</td>
+            <td title="lm">有td元素有title属性属性值为lm</td>
+            <td title="m l">有td元素有title属性属性值为m l</td>
+            <td title="m l n">有td元素有title属性属性值为m l n</td>
+        </tr>
+    </table>
+    <br />
+    <h1>有title属性属性值为"o结尾"的td元素会被选择</h1>
+    <table border="1">
+        <tr>
+            <td>有td元素无属性</td>
+            <td title="">有td元素有title属性但属性值为空</td>
+            <td title="o">有td元素有title属性属性值为o</td>
+            <td title="o p">有td元素有title属性属性值为o p</td>
+            <td title="op">有td元素有title属性属性值为o-p</td>
+            <td title="p o">有td元素有title属性属性值为po</td>
+            <td title="p-o">有td元素有title属性属性值为p o</td>
+            <td title="po">有td元素有title属性属性值为po</td>
+        </tr>
+    </table>
+    <br />
+    <h1>有title属性属性值为"包含x"的td元素会被选择</h1>
+    <table border="1">
+        <tr>
+            <td>有td元素无属性</td>
+            <td title="">有td元素有title属性但属性值为空</td>
+            <td title="x">有td元素有title属性属性值为x</td>
+            <td title="y">有td元素有title属性属性值为y</td>
+            <td title="x y">有td元素有title属性属性值为x y</td>
+            <td title="xy">有td元素有title属性属性值为xy</td>
+            <td title="y x">有td元素有title属性属性值为y x</td>
+            <td title="y-x">有td元素有title属性属性值为y-x</td>
+            <td title="yx">有td元素有title属性属性值为yx</td>
+        </tr>
+    </table>
+</body>
+</html>

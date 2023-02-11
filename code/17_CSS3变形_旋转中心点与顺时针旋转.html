@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>CSS变形_旋转中心点与顺时针旋转</title>
+    <style>
+        div {
+            margin: 10px;
+            height: 50px;
+            width: 50px;
+            border: 1px solid #000000;
+            background-image: url(img/logo.png);
+        }
+    </style>
+</head>
+<body>
+   <div style="float: left;"></div>
+   <div style="float: left;transform: rotate(45deg);left: -75px;position: relative;"></div>
+   <hr style="clear: both;"/>
+   <div style="float: left;"></div>
+   <div style="float: left;transform: rotate(45deg);transform-origin: left top; left: -70px; position: relative;"></div>
+   <hr style="clear: both;"/>
+   <div style="float: left;"></div>
+   <div style="float: left;transform: rotate(45deg);transform-origin: 45px 60%; left: -70px; position: relative;"></div>
+   <hr style="clear: both;"/>
+   <div style="float: left;"></div>
+   <div style="float: left;transform: rotate(45deg);transform-origin: 45px 60%; left: -70px; position: relative;"></div>
+</body>
+</html>

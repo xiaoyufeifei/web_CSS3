@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS3变形_矩阵变形方法</title>
+    <style>
+        div {
+            height: 50px;
+            width: 120px;
+            margin-left: 20px;
+            margin-top: 20px;
+            border: 1px solid #000000;
+            background-color: #ff0000;
+        }
+    </style>
+</head>
+<body>
+    <div style="transform: skew(37deg,37deg);float: left;"></div>
+    <div style="transform: matrix(1,0.75,0.75,1,0,0);float: left;"></div>
+    <br style="clear:both;" />
+    <div style="transform: skew(37deg,37deg) scale(0.5,0.5);float: left;"></div>
+    <div style="transform: matrix(0.5,0.375,0.375,0.5,0,0);float: left;"></div>
+    <br style="clear:both;" />
+    <div style="transform:rotate(30deg);float:left;"></div>
+    <div style="transform: matrix(0.861,0.5,-0.5,0.861,0,0);float: left;"></div>
+</body>
+</html>

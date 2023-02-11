@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>伪元素选择器</title>
+    <style>
+        :enabled {
+            font-family: "隶书";
+        }
+        :disabled {
+            font-family: "楷体";
+            font-size: 30px;
+        }
+        :checked {
+            outline: #ff0000 solid 3px;
+        }
+        p:not(.black) {
+            color: #ff0000;
+        }
+        :target {
+            border: 3px #ff0000 solid;
+        }
+        ::selection {
+            color: #00ff00;
+        }
+    </style>
+</head>
+<body>
+    <p><a href="#content1">跳转至内容1</a></p>
+    <p><a href="#content2">跳转至内容2</a></p>
+    <h1 id="content1">内容1</h1>
+    <input type="button" value="可用标准按钮" />
+    <input type="button" value="不可用按钮" disabled="disabled"/>
+    <br/>
+    <input type="checkbox" name="" id="" value="可用标准按钮" />
+    <input type="checkbox" name="" id="" value="可用标准按钮" />
+    <h1 id="content2">内容2</h1>
+    <p class="black">建设宜居宜业和美乡村</p>
+    <p>扎实推进农民农村共同富裕</p>
+    <p>让精神富有成为共同富裕的底色</p>
+    <p class="black">让小农户融入大产业、对接大市场</p>
+</body>
+</html>

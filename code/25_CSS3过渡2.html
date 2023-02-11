@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS过渡</title>
+    <style>
+        div {
+            width: 100px;
+            height: 100px;
+            background: #0000ff;
+        }
+        div:hover {
+            width: 300px;
+            height: 300px;
+            background: #00ffff;
+        }
+    </style>
+</head>
+<body>
+    <div style="transition:width 4s,height 4s,background-color 4s;
+    -moz-trasition:width 4s,height 4s,background-color 4s;
+    -webkit-trasition:width 4s,height 4s,background-color 4s;
+    -o-trasition:width 4s,height 4s,background-color 4s;"></div>
+</body>
+</html>

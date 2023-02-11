@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>3D变形</title>
+</head>
+<body>
+    <style>
+        div {
+            margin: 10px;
+            width: 50px;
+            height: 50px;
+            border:1px solid #000000;
+            background-image: url(img/logo.png);
+        }
+    </style>
+</body>
+    <div style="float: left;"></div>
+    <div style="float: left; transform:rotateX(180deg)"></div>
+    <div style="float: left; transform:rotateY(180deg)"></div>
+    <div style="float: left; transform:rotateX(180deg)"></div>
+    <div style="float: left; transform:rotateX(60deg) rotateZ(180deg)"></div>
+    <div style="float: left; transform: rotateX(60deg) rotateZ(180deg); transform-origin: center bottom;"></div>
+</html>

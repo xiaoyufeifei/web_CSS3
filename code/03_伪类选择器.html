@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>伪类选择器</title>
+    <style>
+        :root {
+           font-size: 30px;
+        }
+        li:last-child {
+            color: #ff0000;
+        }
+        li:nth-child(3){
+            color: #00ff00;
+        }
+        li:nth-last-child(3){
+            color: #0000ff;
+        }
+        li:only-child{
+            color: #00ffff;
+        }
+        li:first-of-type{
+           font-size: 40px;
+        }
+        li:last-of-type{
+           font-size: 50px;
+        }
+        li:nth-of-type(3){
+           font-size: 60px;
+        }
+        li:nth-last-of-type(3){
+           font-size: 70px;
+        }
+        li:only-of-type{
+           font-size: 80px;
+        }
+        :empty{
+           background-color: #ff0000;
+           width: 100px;
+           height: 30px;
+        }
+    </style>
+</head>
+<body>
+    <ul style="float: left;">
+        <li>一</li>
+        <li>年</li>
+        <li>好</li>
+        <li>运</li>
+        <li>随</li>
+        <li>春</li>
+        <li>到</li>
+    </ul>
+    <ul style="float: left;list-style-type:none;">
+        <li>万事大吉</li>
+    </ul>
+    <ul style="float: left;list-style-type:square;">
+        <li>四</li>
+        <li>季</li>
+        <li>彩</li>
+        <li>云</li>
+        <li>滚</li>
+        <li>滚</li>
+        <li>来</li>
+    </ul>
+    <p style="clear: both;">
+        春联，又称“春贴”“门对”和“对联”。
+    </p>
+    <p></p>
+</body>
+</html>

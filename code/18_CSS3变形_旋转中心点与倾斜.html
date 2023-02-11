@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>CSS变形_旋转中心点与倾斜</title>
+    <style>
+        div {
+            height: 100px;
+            width: 100px;
+            border: 1px solid #000000;
+            background: #ff0000;
+        }
+    </style>
+</head>
+<body>
+    <div style="transform: skewX(30deg);transform-origin:left top;position: absolute;"></div>
+    <!-- transparent: 透明的 -->
+    <div style="position: absolute;background-color: transparent;">
+        <p>沿着x轴正方向倾斜，既y轴增加30度角</p>
+    </div>
+    <div style="transform: skewY(30deg);transform-origin: left top; position: absolute;top:200px;"></div>
+    <div style="position: absolute;background-color: transparent;top:200px;">
+        <p>沿着y轴正方向倾斜，既x轴增加30度角</p>
+    </div>
+    <div style="transform: skew(30deg,30deg);transform-origin: left top; position: absolute; top:400px;"></div>
+    <div style="position: absolute;background-color: transparent; top:400px;"></div>
+</body>
+</html>

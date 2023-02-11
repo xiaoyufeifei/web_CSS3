@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>CSS变形_4种变形函数</title>
+    <style>
+        div {
+            margin: 10px;
+            height: 50px;
+            width: 50px;
+            border: 1px solid #000000;
+            background-image: url(img/logo.png);
+        }
+    </style>
+</head>
+<body>
+   <!-- 元素水平方向移动，垂直方向移动 -->
+   <div style="float: left;"></div>
+   <div style="float: left;transform: translateX(30px);"></div>
+   <div style="float: left;transform: translateY(30px);"></div>
+   <div style="float: left;transform: translate(30px,20px);"></div>
+   <hr style="clear: both;" />
+   <!-- 元素水平方向移动，垂直方向移动 -->
+   <div style="float: left;"></div>
+   <div style="float: left;transform: translateX(-20px) translateY(-20px);"></div>
+   <hr style="clear: both;" />
+   <!-- 元素顺时针旋转角度 -->
+   <div style="float: left;"></div>
+   <div style="float: left; transform: rotate(30deg);"></div>
+   <hr style="clear: both;" />
+   <!-- 元素水平方向，垂直方向的缩放比 -->
+   <div style="float: left;"></div>
+   <div style="float: left;transform: scaleX(0.5)"></div>
+   <div style="float: left;transform: scaleY(0.5)"></div>
+   <div style="float: left;transform: scale(0.5, 0.5)"></div>
+   <div style="float: left;transform: scaleX(1.5) scaleY(1.5);"></div>
+   <hr style="clear: both;" />
+   <!-- 元素沿着x轴、Y轴的倾斜角度 -->
+   <div style="float: left;"></div>
+   <div style="float: left;transform: skewX(30deg);"></div>
+   <div style="float: left;transform: skewY(30deg);"></div>
+   <div style="float: left;transform: skew(30deg, 30deg);"></div>
+</body>
+</html>

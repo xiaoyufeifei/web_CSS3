@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>CSS动画</title>
+    <style>
+          @keyframes turnaround {
+        0% {top:0px;left:0px;background:#ff0000;}
+        25% {top:0px;left:100px;background:#ff0000;}
+        50% {top:0px;left:100px;background:#ff0000;}
+        75% {top:0px;left:0px;background:#ff0000;}
+        100% {top:0px;left:0px;background:#ff0000;}
+    }
+    @-moz-keyframes turnaround {
+        0% {top:0px;left:0px;background:#ff0000;}
+        25% {top:0px;left:100px;background:#ff0000;}
+        50% {top:0px;left:100px;background:#ff0000;}
+        75% {top:0px;left:0px;background:#ff0000;}
+        100% {top:0px;left:0px;background:#ff0000;}
+    }
+    @-o-keyframes turnaround {
+        0% {top:0px;left:0px;background:#ff0000;}
+        25% {top:0px;left:100px;background:#ff0000;}
+        50% {top:0px;left:100px;background:#ff0000;}
+        75% {top:0px;left:0px;background:#ff0000;}
+        100% {top:0px;left:0px;background:#ff0000;}
+    }
+    div {
+        position: relative;
+        width: 100px;
+        height: 100px;
+        background: #ff0000;
+        animation: turnaround 5s infinite;
+        -moz-animation: turnaround 5s infinite;
+        -webkit-animation: turnaround 5s infinite;
+        -o-animation: turnaround 5s infinite;
+    }
+    </style>
+</head>
+<body>
+  <div></div>
+</body>
+</html>

@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>3D变形transform-style</title>
+    <style>
+        .div1 {
+            position: relative;
+            margin: 10px;
+            height: 250px;
+            width: 250px;
+            border: 1px solid #000000;
+        }
+        .div2 {
+            position: absolute;
+            padding: 50px;
+            border:1px solid #000000;
+            background-color: #ff0000;
+        }
+        .div3 {
+            position: absolute;
+            padding: 40px;
+            border: 1px solid #000000;
+            background-color: yellow;
+        }
+    </style>
+</head>
+<body>
+    <div class="div1">
+        <div class="div2">
+            RED<div class="div3">YELLOW</div>
+        </div>
+    </div>
+    <div class="div1" style="float: left;">
+        <div class="div2" style="transform: rotateX(30deg);">RED
+            <div class="div3">YELLOW</div>
+        </div>
+        <p style="position: absolute;bottom: 0;">红色方块沿着x轴旋转30度，子元素黄色方块也跟着旋转了30度</p>
+    </div>
+    <div class="div1" style="float: left;">
+        <div class="div2" style="transform: rotateX(30deg);">RED
+            <div class="div3" style="transform: rotateY(30deg);">YELLOW</div>
+        </div>
+        <p style="position: absolute;bottom: 0;">红色方块保持不变，黄色方块沿y轴旋转30度</p>
+    </div>
+    <div class="div1" style="float: left;">
+        <div class="div2" style="transform: rotateX(30deg);transform-style:preserve-3d;">RED
+            <div class="div3" style="transform: rotateY(30deg);">YELLOW</div>
+        </div>
+        <p style="position: absolute;bottom: 0;">使用transform-style:preserve-3d,使子元素保留它的3D位置</p>
+    </div>
+</body>
+</html>
